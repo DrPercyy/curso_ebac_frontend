@@ -1,128 +1,81 @@
-* {
-    box-sizing: border-box;
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body > header{
-    background-color: #2f3640;
-    padding: 16px, 0;
-    color: rgb(204, 200, 200);
-
+header, 
+section h2{
+    font-family: 'Bungee', cursive;
 }
 
-header .container{
+body{
+    font-family: 'Roboto', 'sans-serif';
+}
+
+header{
+    padding: 19px, 0;
+    background-color: #162c61;
+    color: #ecf0f1;
+}
+
+header h1, 
+section h2{
+    font-weight: normal;
+}
+
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a{
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header li{
+.brand_list img{
+    height: 24px;
+}
+
+.brand_list li{
     display: inline;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    margin-left: 16px;
 }
 
-header li a{
-    color: rgb(204, 200, 200);
-    text-decoration: none;
-}
-
-.container {
-    width: 1366px;
-    margin: 0, auto;
-}
-
-.articles{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between
-}
-
-.articles article img{
-    /*height: 180px;*/
-    width: 100%;
-}
-
-.articles article{
-    width: 30%;
+section .container{
+    align-items: flex-start;
 }
 
 section{
-    padding: 16px, 0;
-}
-
-section h2, 
-.articles article
-{
-    padding: 16px;
-}
-
-.articles article h3{
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-.articles article a{
-    background-color: blue;
-    color: #fff;
-    padding: 8px;
-    display:  inline-block;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 8px;
-
-}
-
-.articles article a:hover{
-    text-decoration: underline;
-} 
-
-.articles article p,
-.articles article a{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.articles article h3{
-    font-size: 24px
+    padding: 24px 0;
 }
 
 section h2{
-    font-size: 32px;
+    margin-bottom: 16px;
 }
 
-
-#sports{
-    background-color: rgba(0, 255, 0, 0.1);
+section{
+    color: #162c61;
 }
 
-#sports .articles article a{
-    background-color: green;
+section p{
+    margin-bottom: 8px;
 }
 
-#economy{
-    background-color: rgb(231, 225, 131);
-}
-
-#economy .articles article a{
-    background-color: orange;
-}
-
-#technology{
-    background-color: rgba(105, 97, 211, 0.521);
-
-}
-
-#technology .articles article a{
-    background-color: rgb(105, 97, 211);
-}
-
-#entertainment{
-    background-color: rgba(241, 64, 64, 0.521);
-
-}
-
-#entertainment .articles article a{
-    background-color: rgb(141, 14, 14);
+.store_front{
+    margin-right: 32px;
 }
